@@ -22,5 +22,11 @@ public class TestCIrcle {   // Enregistrer sous « TestCircle.java »
 		      // Circle avec le nouveau constructeur
 		      Circle c3 = new Circle(3.0, "red");
 		      System.out.println("The circle has radius of " + c3.getRadius() + " and area of " + c3.getArea());
+		      //Test des setRadius et setColor
+		      Circle c4 = new Circle();
+		      c4.setRadius(5.5);
+		      System.out.println("radius is: " + c4.getRadius());
+		      c4.setColor("green");
+		      System.out.println("color is: " + c4.getColor());
 	   }
 	}
