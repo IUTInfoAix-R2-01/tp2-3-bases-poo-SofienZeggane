@@ -17,6 +17,10 @@ public class Circle {  // Save as "Circle.java"
 	      radius = r;
 	      color = "red";
 	   }
+	   public Circle(double r, String c) {  //3rd constructor
+		   radius = r;
+		   color = c;
+	   }
 	   
 	   /** Returns the radius */
 	   public double getRadius() {
@@ -26,5 +30,17 @@ public class Circle {  // Save as "Circle.java"
 	   /** Returns the area of this Circle instance */
 	   public double getArea() {
 	      return radius*radius*Math.PI;
+	   }
+	   
+	   public String getColor() {
+		   return color; 
+	   }
+	   
+	   public void setRadius(double newRadius) {
+		   radius = newRadius;
+	   }
+	   
+	   public void setColor(String newColor) {
+		   color = newColor;
 	   }
 	}
